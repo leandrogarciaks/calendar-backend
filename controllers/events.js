@@ -9,7 +9,7 @@ const getEventos = async (req, res = response) => {
   try {
     res.status(200).json({
       ok: true,
-      msg: eventos,
+      eventos: eventos,
     });
   } catch (error) {
     res.status(500).json({
